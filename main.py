@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 import os
 import jinja2
 import webapp2
@@ -29,7 +28,9 @@ class BaseHandler(webapp2.RequestHandler):
 
 class MainHandler(BaseHandler):
     def get(self):
-        return self.render_template("hello.html")
+        return self.render_template("boogle.html")
+
+
 
 app = webapp2.WSGIApplication([
     webapp2.Route('/', MainHandler),
